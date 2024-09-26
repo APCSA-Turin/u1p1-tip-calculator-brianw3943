@@ -12,23 +12,23 @@ public class TipCalculator {
         double totalTip = ((double)percent*0.01)*cost;
         DecimalFormat df = new DecimalFormat("#.##");      
         
-        double totalBill = cost+totalTip;
-        double perPersonBeforeTip = cost/people;
-        double tipPerPerson = totalTip/people;
-        double perPersonTotalCost = totalBill/people;  
+        double totalBill = cost + totalTip;
+        double perPersonBeforeTip = cost / people;
+        double tipPerPerson = totalTip / people;
+        double perPersonTotalCost = totalBill / people;  
         totalTip = Double.valueOf(df.format(totalTip)); // I learned how to round from here: https://stackoverflow.com/questions/2808535/round-a-double-to-2-decimal-places
         totalBill = Double.valueOf(df.format(totalBill));
         perPersonBeforeTip = Double.valueOf(df.format(perPersonBeforeTip));
         tipPerPerson = Double.valueOf(df.format(tipPerPerson));
         perPersonTotalCost = Double.valueOf(df.format(perPersonTotalCost));              
         result.append("-------------------------------\n");
-        result.append("Total bill before tip: $"+cost+"\n"); //concatenate to this string. DO NOT ERASE AND REWRITE
-        result.append("Total percentage: "+percent+"%\n");
-        result.append("Total tip: $"+totalTip+"\n");
-        result.append("Total Bill with tip: $"+totalBill+"\n");
-        result.append("Per person cost before tip: $"+perPersonBeforeTip+"\n");
-        result.append("Tip per person: $"+tipPerPerson+"\n");
-        result.append("Total cost per person: $"+perPersonTotalCost+"\n");
+        result.append("Total bill before tip: $" + cost + "\n"); //concatenate to this string. DO NOT ERASE AND REWRITE
+        result.append("Total percentage: " + percent + "%\n");
+        result.append("Total tip: $" + totalTip + "\n");
+        result.append("Total Bill with tip: $" + totalBill + "\n");
+        result.append("Per person cost before tip: $" + perPersonBeforeTip + "\n");
+        result.append("Tip per person: $" + tipPerPerson + "\n");
+        result.append("Total cost per person: $" + perPersonTotalCost + "\n");
         result.append("-------------------------------\n");
 
 
